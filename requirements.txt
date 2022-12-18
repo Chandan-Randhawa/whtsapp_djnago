@@ -159,7 +159,6 @@ pure-eval==0.2.2
 py==1.11.0
 pyasn1==0.4.8
 pyasn1-modules==0.2.8
-PyAudio @ file:///C:/Users/Randhawa/pipwin/PyAudio-0.2.11-cp310-cp310-win_amd64.whl
 PyAutoGUI==0.9.53
 pycparser==2.21
 pydantic==1.8.2
@@ -224,7 +223,6 @@ sweetviz==2.1.4
 tb-nightly==2.9.0a20220420
 tensorboard-data-server==0.6.1
 tensorboard-plugin-wit==1.8.1
-tensorflow @ https://storage.googleapis.com/tensorflow/mac/cpu/tensorflow-1.0.0-py3-none-any.whl
 tensorflow-io-gcs-filesystem==0.24.0
 termcolor==1.1.0
 terminado==0.15.0
