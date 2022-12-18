@@ -5,6 +5,6 @@ from cmcapp import views
 urlpatterns = [
     path('', views.sendwhtsappmessage , name = 'send whtsapp message'),
 
-    path('index', views.index , name = 'index'),
+    path('indexx', views.index , name = 'index'),
 
 ]

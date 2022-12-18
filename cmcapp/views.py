@@ -6,12 +6,8 @@ import json
 # Create your views here.
 
 
-def index(request):
-    pass
-
-
 def sendwhtsappmessage(request):
-    header = {'Authorization': 'Bearer EAAPolYdEp4YBAM520E4U5KWZB5X20FcZBGyClZAZCA9wy1YJYA7qAltVjBtU4rCxoO8DkuMj2LH0c5hxIRXJ5xhcdqvD0ZAjaM9eiBeeURF7rlFGePS9sHEA43S7Iu8Ng4L0ZBceNSz8t2UrhwWPNNIMOMc6rTQZAvHBqE2y3ImqTZCxGnD4E6jIBDZCUyAl1XsKBrFWvtYQ9TAZDZD'}
+    header = {'Authorization': 'Bearer EAAPolYdEp4YBAGNfmaZCoCkTrRwUR7sDrj5iO4pXuTpp3pZB6VMArZCFo4B5UUBPcw0MZAfZCbKRsTrCkns69RLMgfH52SSI653E05jtYc9FZAX4O3knJzYaZBw6OZBxQ4ctzXqgkemH2HZBEPwUH55e9hvfRbQ4XRgHb3xoIhBZCn0j3VboTzQC8RQWfSQ7iBNaZAx9WKHNEf3lhi2MDTvaZCTW'}
     payload_2 = { "messaging_product": "whatsapp", "to": "919779922228", "type": "template", "template": { "name": "hello_world", "language": { "code": "en_US" } } }
     pay_3 = {
             "messaging_product": "whatsapp",
@@ -126,12 +122,12 @@ def sendwhtsappmessage(request):
 @csrf_exempt
 def index(request):
     if request.method == "GET":
-        verify_token = 'd039741e-7836-4913-9efb-1e95e80d2e9b'
+        VERIFY_TOKEN = 'd039741e-7836-4913-9efb-1e95e80d2e9b'
         mode = request.GET['hub.mode']
         token = request.GET['hub.verify_token']
         challenge = request.GET['hub.challenge']
 
-        if mode == 'subscribe' and token == verify_token:
+        if mode == 'subscribe' and token == VERIFY_TOKEN:
             return HttpResponse(challenge, status = 200)
         else:
             return HttpResponse('error', status =403)
