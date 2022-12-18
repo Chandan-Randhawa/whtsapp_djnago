@@ -7,7 +7,9 @@ import json
 
 
 def sendwhtsappmessage(request):
-    header = {'Authorization': 'Bearer EAAPolYdEp4YBAGNfmaZCoCkTrRwUR7sDrj5iO4pXuTpp3pZB6VMArZCFo4B5UUBPcw0MZAfZCbKRsTrCkns69RLMgfH52SSI653E05jtYc9FZAX4O3knJzYaZBw6OZBxQ4ctzXqgkemH2HZBEPwUH55e9hvfRbQ4XRgHb3xoIhBZCn0j3VboTzQC8RQWfSQ7iBNaZAx9WKHNEf3lhi2MDTvaZCTW'}
+    x = 'Bearer'
+    y = 'EAAPolYdEp4YBAKZC8JumChpZAkXavTwC5Rp2mnxkDiOhbv4SYHqdO0DXIjZCRs6ctclU6fe2s9p11TSuUYy5XgGvnCsfJy0G2Jdszm01yyeGYy9NDRiDxowXJ7ggLXQPKuInpExqpcxlaUrzEmlr0KztoCNJheZA5ncUn7m2FEL347YM2qSbBNhK38fhIsbefZAZB6U1xvRnEWpDN2oOKe'
+    header = {'Authorization': f'{x} {y}'}
     payload_2 = { "messaging_product": "whatsapp", "to": "919779922228", "type": "template", "template": { "name": "hello_world", "language": { "code": "en_US" } } }
     pay_3 = {
             "messaging_product": "whatsapp",
