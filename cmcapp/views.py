@@ -7,59 +7,59 @@ import json
 
 
 def sendwhtsappmessage(request):
-#     x = 'Bearer'
-#     y = 'EAAPolYdEp4YBAC5mLZAiDM2lMBCsof9ouQKCGRxXgi4cYUevAyqvG06S9lZCaApLWV8hRcpvwD1ZCaz2L62qJ7gmVYSTtxH9bFTjlISIDn2ocJqT4hG3p37x9lZBsxKPZBj9NVe3oLwiP1Bn7BUs9HUCrKF587ktJZCvcif7ev0NSJS1K5zcZC7MZA7sNeIrsSZB9yD84vGD6mxHAPj0BlWxQ'
-#     header = {'Authorization': f'{x} {y}'}
-#     payload_2 = { "messaging_product": "whatsapp", "to": "919779922228", "type": "template", "template": { "name": "hello_world", "language": { "code": "en_US" } } }
-#     pay_3 = {
-#             "messaging_product": "whatsapp",
-#             "recipient_type": "individual",
-#             "to": "919779922228",
-#             "type": "interactive",
-#             "interactive":{
-#                             "type": "list",
-#                             "header": {
-#                                 "type": "text",
-#                                 "text": "your-header-content"
-#                             },
-#                             "body": {
-#                                 "text": "your-text-message-content"
-#                             },
-#                             "footer": {
-#                                 "text": "your-footer-content"
-#                             },
-#                             "action": {
-#                                 "button": "cta-button-content",
-#                                 "sections":[
-#                                 {
-#                                     "title":"12",
-#                                     "rows": [
-#                                     {
-#                                         "id":"unique-row-identifier",
-#                                         "title": "python",
-#                                         "description": "",           
-#                                     },
-#                                     {
-#                                         "id":"unique-row-identifier-2",
-#                                         "title": "django ",
-#                                         "description": "",           
-#                                     }
-#                                     ]
-#                                 },
-#                                 {
-#                                     "title":"34",
-#                                     "rows": [
-#                                     {
-#                                         "id":"unique-row-identifier",
-#                                         "title": "software",
-#                                         "description": "",           
-#                                     }
-#                                     ]
-#                                 },
-#                                 ]
-#                             }
-#                             }
-            # }
+    # x = 'Bearer'
+    # y = 'EAAPolYdEp4YBAH6tThgF91vgJ9FMCJGwEhyCOZBtyN6LyTWBILAxX15DYHo0DkyLEJolGh18eWmHPsZAB8q37tAZBLRsa4HmemtCbmRzZB8CkpeJMzi2osCPbQbdDOomBczz2uX28O4GIursMZB90pSGud7zZANLgLjjwuXZATkCyWvQGm6aWpco5YDD3YagrnUBxYDOZAdVno2hd8ZCdk0eQ'
+    # header = {'Authorization': f'{x} {y}'}
+    # payload_2 = { "messaging_product": "whatsapp", "to": "919779922228", "type": "template", "template": { "name": "hello_world", "language": { "code": "en_US" } } }
+    # pay_3 = {
+    #         "messaging_product": "whatsapp",
+    #         "recipient_type": "individual",
+    #         "to": "919779922228",
+    #         "type": "interactive",
+    #         "interactive":{
+    #                         "type": "list",
+    #                         "header": {
+    #                             "type": "text",
+    #                             "text": "your-header-content"
+    #                         },
+    #                         "body": {
+    #                             "text": "your-text-message-content"
+    #                         },
+    #                         "footer": {
+    #                             "text": "your-footer-content"
+    #                         },
+    #                         "action": {
+    #                             "button": "cta-button-content",
+    #                             "sections":[
+    #                             {
+    #                                 "title":"12",
+    #                                 "rows": [
+    #                                 {
+    #                                     "id":"unique-row-identifier",
+    #                                     "title": "python",
+    #                                     "description": "",           
+    #                                 },
+    #                                 {
+    #                                     "id":"unique-row-identifier-2",
+    #                                     "title": "django ",
+    #                                     "description": "",           
+    #                                 }
+    #                                 ]
+    #                             },
+    #                             {
+    #                                 "title":"34",
+    #                                 "rows": [
+    #                                 {
+    #                                     "id":"unique-row-identifier",
+    #                                     "title": "software",
+    #                                     "description": "",           
+    #                                 }
+    #                                 ]
+    #                             },
+    #                             ]
+    #                         }
+    #                         }
+    #         }
     # payload = {
     #             "messaging_product": "whatsapp",
     #             "recipient_type": "individual",
@@ -90,14 +90,14 @@ def sendwhtsappmessage(request):
     #                         "type": "text",
     #                         "text": "Zoarwar Singh"
     #                     },
-    #                     {
-    #                         "type": "text",
-    #                         "text": "python"
-    #                     },
-    #                     {
-    #                         "type": "text",
-    #                         "text": "Postgresql"
-    #                     }
+    #                     # {
+    #                     #     "type": "text",
+    #                     #     "text": "python"
+    #                     # },
+    #                     # {
+    #                     #     "type": "text",
+    #                     #     "text": "Postgresql"
+    #                     # }
     #                     ]
     #                 },
     #                 {
@@ -122,7 +122,7 @@ def sendwhtsappmessage(request):
     return HttpResponse('ifimvmfii')
 
 @csrf_exempt
-def index(request):
+def indexx(request):
     if request.method == "GET":
         VERIFY_TOKEN = 'd039741e-7836-4913-9efb-1e95e80d2e9b'
         mode = request.GET['hub.mode']
